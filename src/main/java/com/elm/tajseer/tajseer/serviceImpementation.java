@@ -29,5 +29,10 @@ public class serviceImpementation implements service {
     public void deleteStudent(int id) {
          repo.deleteById(id);
     }
+    @Override
+    public Student udateStudent(Student student,int id){
+        student.setId(id);
+        return repo.save(student);
+}
 
 }

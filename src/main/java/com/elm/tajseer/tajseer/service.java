@@ -7,5 +7,6 @@ public interface service {
     public List<Student> getStudents();
     public Student getStudent(int id);
     public void deleteStudent(int id);
+    public Student udateStudent(Student student,int id);
 
 }

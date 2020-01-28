@@ -33,5 +33,9 @@ public class Controllar {
     public void delete(@PathVariable("id") int id){
          service.deleteStudent(id);
     }
+    @PutMapping("/{id}")
+    public Student updateStudent(@RequestBody Student student,@PathVariable("id") int id){
+        return service.udateStudent(student,id);
+}
 
 }
